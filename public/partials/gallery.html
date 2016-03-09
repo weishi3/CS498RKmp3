@@ -1,0 +1,98 @@
+<div ng-controller="detailsController" id="gal">
+    <div class="row">
+        <div class="columns small-1 large-1">
+            <div class="text-center">
+                <a class="button1" ng-click="query='' "  >
+                    All
+                </a>
+            </div>
+        </div>
+        <div class="columns small-1 large-1">
+            <div class="text-center">
+                <a class="button1" ng-click="query='Action' " >
+                    Action
+                </a>
+            </div>
+        </div>
+        <div class="columns small-1 large-1">
+            <div class="text-center">
+                <a class="button1" ng-click="query='Adventure' " >
+                    Adventure
+                </a >
+            </div>
+        </div>
+        <div class="columns small-1 large-1">
+            <div class="text-center">
+                <a class="button1" ng-click="query='Crime' " >
+                    Crime
+                </a >
+            </div>
+        </div>
+        <div class="columns small-1 large-1">
+            <div class="text-center">
+                <a class="button1" ng-click="query='Comedy' " >
+                    Comedy
+                </a >
+            </div>
+        </div>
+        <div class="columns small-1 large-1">
+            <div class="text-center">
+                <a class="button1" ng-click="query='Drama' " >
+                    Drama
+                </a>
+            </div>
+        </div>
+        <div class="columns small-1 large-1">
+            <div class="text-center">
+                <a class="button1" ng-click="query='Musical' " >
+                    Musical
+                </a>
+            </div>
+        </div>
+        <div class="columns small-1 large-1">
+            <div class="text-center">
+                <a class="button1" ng-click="query='Mystery' " >
+                    Mystery
+                </a >
+            </div>
+        </div>
+        <div class="columns small-1 large-1">
+            <div class="text-center">
+                <a class="button1" ng-click="query='Romance' " >
+                    Romance
+                </a class="button1">
+            </div>
+        </div>
+        <div class="columns small-1 large-1">
+            <div class="text-center">
+                <a class="button1" ng-click="query='Sci-Fi' " >
+                    Sci-Fi
+                </a >
+            </div>
+        </div>
+        <div class="columns small-1 large-1">
+            <div class="text-center">
+                <a class="button1" ng-click="query='Thriller' " >
+                    Thriller
+                </a >
+            </div>
+        </div>
+        <div class="columns small-1 large-1">
+            <div class="text-center">
+                <a class="button1" ng-click="query='Western' " >
+                    Western
+                </a>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="row small-up-2 medium-up-4 large-up-6">
+        <div class="column" id="galleryBox" ng-repeat="movie in movies | filter:query | orderBy:order">
+            <a href="#/details/{{movie.rank}}">
+                <img ng-src="/data/images/{{movie.imdbID}}.jpg">
+            </a>
+        </div>
+    </div>
+
+
+</div>

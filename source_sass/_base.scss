@@ -1,1 +1,196 @@
 // Add any custom Sass & CSS here
+@import url("http://fonts.googleapis.com/css?family=Bree+Serif|Open+Sans");
+@import url("http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css");
+/**/
+html, body, div, span,
+h1, h2, h3, h4, h5, h6,a,
+   ul, li, footer, header,nav  {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  margin: 0 auto;
+  text-align: center;
+  vertical-align: baseline; }
+
+h1{
+  color: darkblue;
+  font-style: italic;
+  font-family: serif;
+}
+
+a{
+  font-weight:bold;
+}
+
+
+ul{
+  li{
+    a{
+      font-size:40px;
+      color: $darkred;
+      font-style: oblique;
+      font-family: fantasy;
+
+    }
+
+  }
+
+}
+
+h1{
+  font-size:50px;
+
+}
+.panel{
+  height:100%;
+  background: url("../data/oskar.jpg");
+  width:38%;
+
+
+}
+
+
+
+.inner {
+  width:100%;
+  height: 80%;
+  opacity: 1;
+
+
+  padding-top: 10%;
+  padding-bottom: 10%;
+
+}
+
+
+.input2{
+  width: 40%;
+  height:100%;
+}
+
+.input1{
+  margin-top: 20%;
+  width: 80%;
+  height:100%;
+}
+
+.content{
+
+  .row{
+    background: darkgray;
+    width:50%;
+    hr{
+      margin-bottom: 0%;
+      margin-top: 0%;
+    }
+    a{
+      width:100%;
+      height:100%;
+
+    }
+
+    #outp1{
+
+      height:200px;
+      a{
+        .display{
+          padding-left: 0;
+          height:100%;
+          padding-top:4%;
+          padding-bottom:4%;
+          width:100%;
+        }
+
+      }
+    }
+  }
+
+}
+
+
+
+.details{
+  margin-left:25%;
+  margin-right:25%;
+  margin-top:0;
+  margin-bottom:10px;
+  background: darkcyan;
+}
+#slider1{
+
+    height:70px;
+    width:100%;
+  padding:0;
+  margin: 0;
+
+}
+
+#slider{
+
+  height:60px;
+  width:80%;
+  padding:0;
+  margin: 0;
+
+}
+
+#display{
+  padding-top: 10px;
+
+}
+#sliderT,#sliderT1{
+
+
+  width:100%;
+
+
+
+
+}
+
+
+
+p{
+  text-align: left;
+  color:whitesmoke;
+
+}
+
+.title{
+  color: lightpink;
+  font-style: italic;
+  font-family: Roboto;
+  font-size: large;
+}
+
+.rank{
+  color: lightsalmon;
+  font-weight:bold;
+
+
+}
+
+#nul,#nul1{
+  color:red;
+  font-family: monospace;
+}
+
+label{
+  font-size:large;
+  font-style: oblique;
+  font-weight:bold;
+  color:red;
+}
+
+.button1{
+  font-size:medium;
+  color: lightpink;
+  font-style: italic;
+  font-family: Roboto;
+
+}
+#gal,body{
+background: url("../data/oskar2.jpg")
+}

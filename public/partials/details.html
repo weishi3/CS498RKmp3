@@ -1,0 +1,54 @@
+<div ng-controller="detailsController">
+
+
+    <div class="details">
+        <div class="row"><!--arrows-->
+            <div class="small-2 columns  arrow">
+
+                    <a ng-show="movie.rank!==1" class="ng-hide" href="#/details/{{movie.rank-1}}" id="sliderT">
+                        <img  ng-src="/data/images/{{ movies[movie.rank-2].imdbID}}.jpg"   id="slider">
+                    </a>
+                    <p ng-show="movie.rank==1" class="ng-hide" >
+                        <a id="nul"> Reaching Top Rank! </a>
+
+
+                    </p>
+
+            </div>
+            <div class="small-6 columns"></div>
+            <div class="small-2  columns arrow ">
+
+                    <a ng-show="movie.rank!==250" id="rightArrow "href="#/details/{{movie.rank+1}}"id="sliderT1">
+                        <img  ng-src="/data/images/{{ movies[movie.rank].imdbID}}.jpg" id="slider1"  >
+                    </a>
+
+                    <p ng-show="movie.rank==250" class="ng-hide" >
+                        <a id="nul1"> Reaching Bottom Rank! </a>
+                    </p>
+            </div>
+
+        </div>
+
+
+        <div class="row"  id="display"><!--title and rank-->
+            <div class="small-4 columns  ">
+            <a class="title">{{movie.title}}</a>
+                <br>
+            <a class="rank">Rank:{{movie.rank}}</a>
+                </div>
+        </div>
+        <br>
+        <div class="row"><!--img and content-->
+            <div class="small-4 columns  " id="display1">
+                <img ng-src="/data/images/{{movie.imdbID}}.jpg">
+            </div>
+            <div class="small-8 columns  " id="display2">
+                <p id="plot">{{movie.plot}}</p>
+
+                <p class="short">Released: {{movie.released}}</p>
+                <p class="short">Runtime:{{movie.runtime}}</p>
+                <p class="short">Awards: {{movie.awards}}</p>
+            </div>
+        </div>
+    </div>
+</div>

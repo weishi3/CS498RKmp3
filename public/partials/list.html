@@ -1,0 +1,62 @@
+<div ng-controller="listController">
+
+    <div class="panel">
+
+        <div class="inner">
+
+        <div class="row columns small-centered small-6 ">
+
+            <div class="text-center">
+
+                <input id="filter" ng-model="query" class="input1" >
+            </div>
+        </div>
+        <br>
+        <div class="row columns small-centered small-6 " >
+            <a>Sort by:</a>
+            <select ng-model="order" class="input2">
+                <option value="rank"class="text-center">Ranking</option>
+                <option value="title"class="text-center">Title</option>
+            </select>
+        </div>
+        <div class="row columns small-centered small-6 ">
+
+            <label>
+                Ascending  <input type="radio" ng-model="q" ng-value="false">
+                Descending  <input type="radio" ng-model="q" ng-value="true">
+            </label>
+        </div>
+        </div>
+
+    </div>
+
+    <div class="content">
+
+        <div class="row "  ng-repeat="movie in movies | filter:query | orderBy:order:q">
+
+
+            <hr>
+            <div class="small-4 columns  " id="outp1">
+                <a href="#/details/{{movie.rank}}" >
+                <img  ng-src="/data/images/{{ movie.imdbID}}.jpg" class="display" >
+                    </a>
+            </div>
+            <div class="small-6 columns  " >
+
+                <a class="title" href="#/details/{{movie.rank}}">{{movie.title}}</a>
+                <br>
+                <a class="rank" href="#/details/{{movie.rank}}">Rank: {{movie.rank}}</a>
+
+            </div >
+
+            <div class= "small-4 columns end"></div>
+
+
+        </div>
+
+    </div>
+
+
+</div>
+
+
