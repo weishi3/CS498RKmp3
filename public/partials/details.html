@@ -6,7 +6,7 @@
             <div class="small-2 columns  arrow">
 
                     <a ng-show="movie.rank!==1" class="ng-hide" href="#/details/{{movie.rank-1}}" id="sliderT">
-                        <img  ng-src="/data/images/{{ movies[movie.rank-2].imdbID}}.jpg"   id="slider">
+                        <img  ng-src="./data/images/{{ movies[movie.rank-2].imdbID}}.jpg"   id="slider">
                     </a>
                     <p ng-show="movie.rank==1" class="ng-hide" >
                         <a id="nul"> Reaching Top Rank! </a>
@@ -19,7 +19,7 @@
             <div class="small-2  columns arrow ">
 
                     <a ng-show="movie.rank!==250" id="rightArrow "href="#/details/{{movie.rank+1}}"id="sliderT1">
-                        <img  ng-src="/data/images/{{ movies[movie.rank].imdbID}}.jpg" id="slider1"  >
+                        <img  ng-src="./data/images/{{ movies[movie.rank].imdbID}}.jpg" id="slider1"  >
                     </a>
 
                     <p ng-show="movie.rank==250" class="ng-hide" >
@@ -40,7 +40,7 @@
         <br>
         <div class="row"><!--img and content-->
             <div class="small-4 columns  " id="display1">
-                <img ng-src="/data/images/{{movie.imdbID}}.jpg">
+                <img ng-src="./data/images/{{movie.imdbID}}.jpg">
             </div>
             <div class="small-8 columns  " id="display2">
                 <p id="plot">{{movie.plot}}</p>
